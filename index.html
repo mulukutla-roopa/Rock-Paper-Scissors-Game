@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--Icon Link-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Style Sheet Link -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- Title -->
+  <title>Skill Safari | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <!-- Container Class -->
+  <div class="container">
+    <header>
+      <h1>
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissors</span>
+      </h1>
+      <div class="score-container">
+        <h4>Score</h4>
+        <p id="score">0</p>
+      </div>
+    </header>
+
+   <!-- Buttons Class --> 
+   <main id="main">
+      <button class="btn-circle btn-paper pick" data-choice="paper">
+        <span class="wrapper">
+          <img src="Images/icon-paper.svg">
+        </span>
+      </button>
+      <button class="btn-circle btn-scissors pick" data-choice="scissors">
+        <span class="wrapper">
+          <img src="Images/icon-scissors.svg">
+        </span>
+      </button>
+      <button class="btn-circle btn-rock pick" data-choice="rock">
+        <span class="wrapper">
+          <img src="Images/icon-rock.svg">
+        </span>
+      </button>
+    </main> 
+
+    <!-- Rules Modal Class -->
+    <div class="rules-modal" id="modal">
+        <div class="modal-body">
+          <button id="close">
+            <img src="Images/icon-close.svg" alt="close">
+          </button>
+          <h1 class="modal-title">Rules</h1>
+          <img src="Images/image-rules.svg" alt="rules">
+        </div>
+    </div>
+    <button class="btn-rules" id="open">Rules</button>
+  </div>
+
+  <!-- Selection Class -->
+  <div class="selection" id="selection">
+    <div>
+      <h2>You Picked</h2>
+      <button class="btn-circle btn-rock"  id="user_select">
+        <span class="wrapper">
+          <img src="Images/icon-rock.svg">
+        </span>
+      </button>
+    </div>
+    <div class="btn-down">
+      <p class="big-text"><span id="winner">Win</span></p>
+      <button class="btn" id="reset">Play Again</button>
+    </div>
+    <div>
+      <h2>The House Picked</h2>
+      <button class="btn-circle btn-rock"  id="computer_select">
+        <span class="wrapper">
+          <img src="Images/icon-rock.svg">
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- JS Link -->
+  <script src="app.js"></script>
+</body>
+</html>
